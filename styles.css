@@ -224,3 +224,10 @@ nav .right a span {
   margin: 0;
   line-height: 1.6;
 }
+
+.projects-list .project {
+  padding: 15px;
+  border-left: 4px solid var(--link-color);
+  background-color: #fff;
+  border-radius: 5px;
+}
