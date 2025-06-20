@@ -1,31 +1,39 @@
+/* Root variables for theme colors */
 :root {
+  /* Primary text color */
   --text-color: #1a1c20;
+  /* Link and accent color */
   --link-color: #4a76ee;
+  /* Page background color */
   --background-color: #eeeff1;
 }
 
+/* Reset default margins, paddings, and ensure box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base font, background, and text color for the page */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+/* Default link styles */
 a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-/* NAVBAR */
+/* NAVBAR container: flex layout for left and right sections */
 nav {
   display: flex;
   justify-content: space-between;
@@ -34,12 +42,14 @@ nav {
   height: 80px;
 }
 
+/* Left side of navbar (brand/home link) */
 nav .left a {
   color: var(--text-color);
   font-size: 22px;
   font-weight: 600;
 }
 
+/* Right side navbar links: spacing and alignment */
 nav .right a {
   color: var(--text-color);
   margin: 0 10px;
@@ -47,10 +57,12 @@ nav .right a {
   align-items: center;
 }
 
+/* Space between icon and text in navbar links */
 nav .right a span {
   margin-left: 5px;
 }
 
+/* HERO SECTION layout and spacing */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -60,23 +72,28 @@ nav .right a span {
   gap: 40px;
 }
 
+/* Text block within hero: grows relative to headshot */
 .hero-section .text {
   flex: 5;
 }
 
+/* Hero heading size */
 .hero-section .text h2 {
   font-size: 45px;
 }
 
+/* Hero paragraph spacing and readability */
 .hero-section .text p {
   margin-top: 15px;
   line-height: 1.5;
 }
 
+/* Link buttons under hero text */
 .hero-section .text .links {
   margin-top: 25px;
 }
 
+/* Style for each hero link button */
 .hero-section .text .links a {
   display: inline-block;
   padding: 5px 10px;
@@ -87,43 +104,51 @@ nav .right a span {
   transition: 0.1s;
 }
 
+/* Hover effect for hero link buttons */
 .hero-section .text .links a:hover {
   color: var(--text-color);
   border: 2px solid var(--text-color);
 }
 
+/* Headshot container alignment */
 .hero-section .headshot {
   flex: 2;
   display: flex;
   justify-content: right;
 }
 
+/* Headshot image styling */
 .hero-section .headshot img {
   width: 350px;
   border-radius: 50%;
 }
 
+/* SKILLS SECTION padding and spacing */
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
+/* Section heading style */
 .skills-section h2 {
   text-align: center;
   font-size: 35px;
 }
 
+/* Skills description spacing */
 .skills-section .text {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Grid of skill cells */
 .skills-section .cells {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/* Each skill cell: border and layout */
 .skills-section .cells .cell {
   display: flex;
   justify-content: center;
@@ -137,6 +162,7 @@ nav .right a span {
   border-radius: 5px;
 }
 
+/* Icon inside skill cell */
 .skills-section .cells .cell img {
   width: 30px;
   height: 30px;
@@ -144,35 +170,42 @@ nav .right a span {
   border-radius: 2px;
 }
 
+/* Skill name font size */
 .skills-section .cells .cell span {
   font-size: 18px;
 }
 
+/* CONTACT SECTION layout and spacing */
 .contact-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
+/* Contact heading size */
 .contact-section h2 {
   font-size: 35px;
 }
 
+/* Container for contact text and form side-by-side */
 .contact-section .group {
   display: flex;
   gap: 50px;
 }
 
+/* Intro text in contact section */
 .contact-section .group .text {
   flex: 3;
   margin-top: 20px;
 }
 
+/* Contact form styling */
 .contact-section .group form {
   flex: 3;
   display: flex;
   flex-direction: column;
 }
 
+/* Inputs and textarea style */
 .contact-section .group form input,
 .contact-section .group form textarea {
   font-family: 'Poppins', sans-serif;
@@ -184,6 +217,7 @@ nav .right a span {
   resize: none;
 }
 
+/* Submit button styling */
 .contact-section .group form button {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -195,54 +229,25 @@ nav .right a span {
   transition: 0.1s;
 }
 
+/* Hover effect for submit button */
 .contact-section .group form button:hover {
   filter: brightness(0.9);
 }
 
+/* PROJECTS SECTION padding and spacing */
 .projects-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
-.projects-section h2 {
-  font-size: 35px;
-  margin-bottom: 20px;
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.projects-list .project h3 {
-  margin-bottom: 5px;
-  font-size: 24px;
-}
-
-.projects-list .project p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.projects-list .project {
-  padding: 15px;
-  border-left: 4px solid var(--link-color);
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.projects-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
-
+/* Centered heading for projects */
 .projects-section h2 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
 }
 
+/* List layout for projects */
 .project {
   display: flex;
   align-items: center;
@@ -250,6 +255,7 @@ nav .right a span {
   margin-bottom: 40px;
 }
 
+/* Project image styling */
 .project img {
   width: 120px;
   height: 120px;
@@ -258,11 +264,13 @@ nav .right a span {
   border: 1px solid #ccc;
 }
 
+/* Project title style */
 .project .text h3 {
   font-size: 20px;
   margin-bottom: 8px;
 }
 
+/* Project description style */
 .project .text p {
   font-size: 16px;
   line-height: 1.4;

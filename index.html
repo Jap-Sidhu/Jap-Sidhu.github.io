@@ -1,69 +1,78 @@
+<!-- Defines the document type and HTML language -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Ensures compatibility with Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets the viewport to make the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Preconnect to Google Fonts for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Imports the Poppins font with weights 400 and 600 -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome for social and UI icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Custom Styles -->
+    <!-- Link to the custom stylesheet for site-wide styles -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Page title appears in browser tab -->
     <title>Portfolio</title>
 
-    <link rel="icon" href="favicon.png" type ="image/png">
-
-
-
-
+    <!-- Favicon for bookmark and tab icon -->
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR: Site-wide navigation bar -->
     <nav>
         <div class="left">
-            <a href = "/"> Japdeep Sidhu</a>
+            <!-- Logo/Home link -->
+            <a href="/"> Japdeep Sidhu</a>
         </div>
 
         <div class="right">
+            <!-- GitHub profile link with icon -->
             <a href="https://github.com/Jap-Sidhu?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
                 <span>Github</span>
             </a>
+            <!-- LinkedIn profile link with icon -->
             <a href="https://www.linkedin.com/in/japdeep-singh-07708023a/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
+            <!-- Email contact link with icon -->
             <a href="mailto:jss77@sfu.ca">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
             </a>
-            </a>
+            <!-- Instagram profile link with icon -->
             <a href="https://www.instagram.com/japdeep.s/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
                 <span>Instagram</span>
             </a>
         </div>
-
-
     </nav>
     <!-- END NAVBAR -->
+
 <main>
-  <!-- SECTION 1: Hero -->
+  <!-- SECTION 1: Hero banner/introduction -->
   <section id="hero" class="hero-section">
     <div class="text">
+      <!-- Main greeting and introduction -->
       <h2>Hi, I'm Japdeep 👋</h2>
       <p>
         I am a Computer Science student at Simon Fraser University, specializing in software development and AI. 
         I love creating innovative solutions and exploring new technologies. Whether it is an academic project,
         solo work, or group collaboration, I am always eager to learn and grow in the field of computer science.
       </p>
+      <!-- Quick navigation links to other sections -->
       <div class="links">
         <a href="#skills">
           <i class="fa-solid fa-code"></i>
@@ -81,20 +90,21 @@
     </div>
 
     <div class="headshot">
+      <!-- Headshot image of the user -->
       <img src="1000005832.jpg" alt="Japdeep Sidhu headshot">
     </div>
-
-    
   </section>
 
-  <!-- SECTION 2: Skills -->
+  <!-- SECTION 2: Skills overview -->
   <section id="skills" class="skills-section">
     <h2>Skills</h2>
     <div class="text">
+      <!-- Description of primary skills and interests -->
       I have hands-on experience with a wide range of technologies. My main strengths lie in C++, Python, and front-end development using HTML/CSS.
       I'm always eager to improve and currently exploring advanced algorithms and system design.
     </div>
 
+    <!-- Display technology logos and names -->
     <div class="cells">
       <div class="cell"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C logo"><span>C</span></div>
       <div class="cell"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C++ logo"><span>C++</span></div>
@@ -104,15 +114,16 @@
     </div>
   </section>
 
-  <!-- SECTION 3: Contact -->
+  <!-- SECTION 3: Contact form -->
   <section id="contact" class="contact-section">
     <h2>Contact</h2>
     <div class = "group">
         <div class = "text">
+            <!-- Invitation to reach out -->
             Have a project in mind or just want to say hi? Feel free to reach out!
-
         </div>
 
+        <!-- Contact form fields -->
         <form>
             <label for = "name">Name</label>
             <input type = "text" id = "name" />
@@ -123,18 +134,18 @@
             <label for = "message">Message</label>
             <textarea id = "message" cols ="30" rows = "6"></textarea>
 
+            <!-- Submit button for the form -->
             <button type = "submit">Send</button>
         </form>
     </div>
-    
   </section>
 
-
-<!-- SECTION 4: Projects -->
+  <!-- SECTION 4: Projects showcase -->
   <section id="projects" class="projects-section">
     <h2>Projects</h2>
     <div class="projects-list">
 
+      <!-- Project 1: Tic Tac Toe AI -->
       <div class="project">
         <img src="original-455ebc2c853d9828cfde097ecf30c1f8.webp" alt="Tic Tac Toe">
         <div class="text">
@@ -145,6 +156,7 @@
         </div>
       </div>
 
+      <!-- Project 2: Search Assignment -->
       <div class="project">
         <img src="20250619_1401_Robot Cleaning Grid_simple_compose_01jy4zw397feb99sws0hv75r0g.png" alt="Search Assignment">
         <div class="text">
@@ -155,20 +167,15 @@
         </div>
       </div>
 
-
+      <!-- Project 3: Disaster Awareness System -->
       <div class="project">
         <img src="20250619_1403_Disaster Alert System_simple_compose_01jy500mgxed6t8276yecqk4wq.png" alt="Disaster Awareness System">
         <div class="text">
           <h3>Disaster Awareness System</h3>
           <p>Work-in-progress web app showing safe zones during disasters using real-time APIs.</p>
-          </div>
         </div>
-
       </div>
+
+    </div>
   </section>
-
-
-
-
 </main>
-
